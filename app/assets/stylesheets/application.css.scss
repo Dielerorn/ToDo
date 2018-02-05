@@ -26,11 +26,11 @@ html {
 
 body {
  	height: 100%;
-  background: -webkit-linear-gradient(40deg, #4CB8C4 10%, #EAECC6 100%);
-  background:    -moz-linear-gradient(40deg, #4CB8C4 10%, #EAECC6 100%);
-  background:     -ms-linear-gradient(40deg, #4CB8C4 10%, #EAECC6 100%);
-  background:      -o-linear-gradient(40deg, #4CB8C4 10%, #EAECC6 100%);
-  background:         linear-gradient(40deg, #4CB8C4 10%, #EAECC6 100%);
+  background: -webkit-linear-gradient(40deg, #202427 10%, #3b4247 100%);
+  background:    -moz-linear-gradient(40deg, #202427 10%, #3b4247 100%);
+  background:     -ms-linear-gradient(40deg, #202427 10%, #3b4247 100%);
+  background:      -o-linear-gradient(40deg, #202427 10%, #3b4247 100%);
+  background:         linear-gradient(40deg, #202427 10%, #3b4247 100%);
   font-family: 'Lato', sans-serif;
 }
 
@@ -47,7 +47,7 @@ body {
 #notice {
 	text-align: center;
 	font-size: 0.6em;
-	color: $dark;
+	color: white;
 	font-weight: 100;
 }
 
@@ -83,7 +83,7 @@ body {
 	margin: 0 0 3em 0;
 	text-align: center;
 	font-size: 0.9em;
-	color: $dark;
+	color: white;
 	font-weight: 100;
 }
 
@@ -113,7 +113,7 @@ body {
 			p {
 				margin: 0;
 				padding: 1em;
-				color: $dark;
+				color: white;
 				font-weight: 100;
 			}
 		}
@@ -128,7 +128,7 @@ body {
 			color: white;
 			transition: all .4s ease-in-out;
 			&:hover {
-				color: $dark;
+				color: white;
 			}
 		}
 	}
@@ -157,10 +157,10 @@ body {
 			transition: all .4s ease-in-out;
 			cursor: pointer;
 			&:hover {
-				background: $dark;
+				background: rgba(250,250,250,.4);
 			}
 		}
-		::-webkit-input-placeholder { color: $dark; }
+		::-webkit-input-placeholder { color: white; }
 	}
 }
 
@@ -179,7 +179,7 @@ body {
 	padding: 0 5%;
 }
 label {
-	color: $dark;
+	color: white;
 }
 input[type="text"], textarea {
 	width: 100%;
@@ -205,10 +205,14 @@ input[type="submit"] {
 	display: inline-block;
 	transition: all .4s ease-in-out;
 	cursor: pointer;
-	color: $dark;
+	color: #3b4247;
 	&:hover {
-		background: $dark;
+		background: white;
 		color: white;
 	}
 }
-::-webkit-input-placeholder { color: $dark; }
+::-webkit-input-placeholder { color: white; }
+
+.divider {
+  text-align: center;
+}

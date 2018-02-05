@@ -1,17 +1,36 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>ToDo</title>
+    <title>To-Do</title>
     <%= csrf_meta_tags %>
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet" />
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" />
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <link href="/favicon.png" rel="icon"/>
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet"/>
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet"/>
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
-    <div class="container">
-    <%= yield %>
+    <br/>
+  <div class="whole-page" style="z-index:1;">
+    <h2 class="todo_list_title">To-Do List of Things to Do</h2>
+    <div class="divider">
+    <%= image_tag("divider.png", :size => "500x50") %>
   </div>
+    <div class="container">
+      <%= yield %>
+    </div>
+  </div>
+
+<!-- PLEXUS -->
+    <div id="large-header" class="large-header" style="position:fixed; top:0;left:0; z-index:-1;">
+      <canvas id="demo-canvas"></canvas>
+    </div>
+      <%= javascript_include_tag 'plexus/TweenLite.min.js', 'data-turbolinks-track': 'reload' %>
+      <%= javascript_include_tag 'plexus/EasePack.min.js', 'data-turbolinks-track': 'reload' %>
+      <%= javascript_include_tag 'plexus/rAF.js', 'data-turbolinks-track': 'reload' %>
+      <%= javascript_include_tag 'plexus/demo-1.js', 'data-turbolinks-track': 'reload' %>
+<!-- /PLEXUS -->
+
   </body>
 </html>
