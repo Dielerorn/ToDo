@@ -5,9 +5,9 @@ Installation:
 
 * Clone the repository
 
-* Run bundle install to get the dependencies
+* Run <code>bundle install</code> to get the dependencies
 
-* Run the server
+* Run the server with <code>rails server</code>
 
 # Future Updates
 
